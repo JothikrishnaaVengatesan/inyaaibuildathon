@@ -40,8 +40,22 @@ If errors are detected, the agent guides users for corrections or escalates the 
 ## 🔗 Live Demo
 Currently hosted on **Inya.ai**.  
 Since all credits are utilized, here are screenshots of the working agent configuration:  
+#### MADE USING INYA.AI
+![autoagent screenshot](<Screenshot 2025-09-30 171121.png>)
 
-![AutoKYC Agent Screenshot](docs/autokyc_agent.png)  
+![alt text](<Screenshot 2025-09-30 180511.png>)
+
+
+
+![alt text](<Screenshot 2025-09-30 180835.png>)
+
+![alt text](<Screenshot 2025-09-30 180842.png>)
+
+
+![alt text](<Screenshot 2025-10-02 164547.png>)
+
+#### MADE BY OWN :
+![alt text](<Screenshot 2025-09-30 180534.png>)
 
 *(Demo access can be provided on request)*
 ---
@@ -57,7 +71,7 @@ Since all credits are utilized, here are screenshots of the working agent config
    pip install -r requirements.txt
    npm install
    ```
-3.Run the application:
+3. Run the application:
    ```
    python app.py
    ```
