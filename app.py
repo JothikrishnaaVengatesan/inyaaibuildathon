@@ -1,0 +1,40 @@
+import streamlit as st
+import random
+
+# Page config
+st.set_page_config(page_title="AutoKYC Agent", layout="centered")
+
+st.title("📱 AutoKYC Agent – Telecom Onboarding")
+st.write("An Agentic AI-powered KYC Verification Prototype")
+
+# Step 1: Upload ID
+st.header("Step 1: Upload ID Document")
+id_file = st.file_uploader("📂 Upload your ID Document (PNG/JPG)", type=["png", "jpg", "jpeg"])
+if id_file:
+    st.success("✅ Document received. Extracting details... (OCR Simulation)")
+    # Mock extracted details
+    st.write({
+        "Name": "Ravi Kumar",
+        "DOB": "12-05-1999",
+        "ID No": "XXXX-1234"
+    })
+
+# Step 2: Upload Selfie
+st.header("Step 2: Upload Selfie")
+selfie = st.file_uploader("🤳 Upload your Selfie", type=["png", "jpg", "jpeg"])
+if selfie:
+    st.success("✅ Selfie captured. Running face match & liveness detection...")
+    face_match = random.choice(["Success", "Fail"])
+    st.write(f"Face Match Result: **{face_match}**")
+
+# Step 3: Fraud & Compliance Check
+st.header("Step 3: Fraud & Compliance Verification")
+if id_file and selfie:
+    fraud_check = random.choice(["No Fraud Detected", "Duplicate ID Found"])
+    st.write(f"Fraud Check: **{fraud_check}**")
+
+    if face_match == "Success" and fraud_check == "No Fraud Detected":
+        st.success("🎉 KYC Approved! SIM Activated ✅")
+    else:
+        st.error("❌ KYC Rejected. Please try again.")
+
