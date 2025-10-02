@@ -53,10 +53,14 @@ Since all credits are utilized, here are screenshots of the working agent config
    git clone https://github.com/JothikrishnaaVengatesan/inyaaibuildathon.git
    cd autokyc-agent
 2. Install dependencies:
+   ```
    pip install -r requirements.txt
    npm install
+   ```
 3.Run the application:
-   python app.py
+   ```
+python app.py
+```
    
 ## 📂 Project Structure
 AutoKYC-Agent/
