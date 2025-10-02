@@ -59,8 +59,8 @@ Since all credits are utilized, here are screenshots of the working agent config
    ```
 3.Run the application:
    ```
-python app.py
-```
+   python app.py
+   ```
    
 ## 📂 Project Structure
 AutoKYC-Agent/
